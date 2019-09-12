@@ -1,0 +1,202 @@
+.content {
+    min-height: 800px;
+    background: #5A687D;
+}
+
+.settings_main {
+    padding: 40px;
+}
+
+#settings_nav {
+    li a:hover {
+        background: transparent;
+        border-color: transparent;
+    }
+
+    li.active>a {
+        background: transparent;
+        color: #fff;
+        border-color: #fff;
+        border-bottom-color: #5A687D;
+    }
+}
+
+.content_box {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+
+    >div {
+        width: 300%;
+        overflow: auto;
+        display: flex;
+        transition: 0.5s;
+        position: relative;
+        right: 0;
+    }
+
+    ul {
+        width: 34%;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+
+            span {
+                width: 100px;
+                text-align: left;
+                font-size: 14px;
+                color: #fff;
+            }
+
+            input {
+                width: 350px;
+                height: 32px;
+                padding: 10px;
+                font-size: 14px;
+                color: #fff;
+                background: transparent;
+                border: 1px solid #D1D1D1;
+                border-radius: 4px;
+            }
+
+            a {
+                width: 100px;
+                color: #B6BBC3;
+            }
+
+            b {
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                width: 230px;
+                text-align: left;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            button{
+                width: 190px;
+                height: 32px;
+                border:1px solid #d1d1d1;
+                border-radius: 4px;
+                background: transparent;
+                color:#fff;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sub_btn {
+    width: 220px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    margin-top: 10px;
+}
+
+.send_sys {
+    width: 120px;
+    height: 40px;
+    background: #1B70EE;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #B6BBC3;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #B6BBC3;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #B6BBC3;
+}
+
+input :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #B6BBC3;
+}
+
+.successAlert,
+.failAlert {
+    display: none;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 420px;
+    border-radius: 4px;
+    padding: 25px 80px;
+
+    >p {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 25px;
+        margin-right: 5px;
+    }
+}
+
+.wechat_shade {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.wechat_content {
+    background: #fff;
+    width: 600px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px 16px 20px;
+    text-align: center;
+
+    h4 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.binding_img {
+    padding: 15px;
+
+    img {
+        width: 240px;
+    }
+}
+
+.wechat_model_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

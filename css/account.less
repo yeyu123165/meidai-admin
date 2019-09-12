@@ -1,0 +1,205 @@
+body {
+    background: #5A687D;
+}
+
+// .content {
+//     float: left;
+//     width: 82%;
+// }
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+}
+
+input :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #999;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    min-width: 100px;
+}
+
+.message {
+    margin-left: 40px;
+    background: #5A687D;
+}
+
+.btn_info {
+    padding: 5px 22px;
+    border: 1px solid #7F8894;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn_info:hover {
+    background: #1B70EE;
+    border-color: #1B70EE;
+}
+
+.timezone {
+    margin: 40px 0 20px 40px;
+    color: #B6BBC3;
+
+    select {
+        width: 150px;
+        background: transparent;
+        height: 28px;
+        border-radius: 4px;
+        padding: 0 5px;
+        margin-right: 16px;
+    }
+
+    input {
+        height: 30px;
+
+        background: transparent;
+        border-color: #7F8894;
+        width: 200px;
+        display: inline-block;
+    }
+
+    span {
+        position: relative;
+    }
+
+    span::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 12px;
+        width: 18px;
+        height: 16px;
+        background: url('../images/icon/date.svg') no-repeat;
+    }
+}
+
+#determine_the_time {
+    margin-left: 16px;
+    background: #1B70EE;
+    // height: 30px;
+    padding: 2px 0;
+    border: none;
+    width: 110px;
+    font-size: 16px;
+    outline: none;
+    // line-height: 0px;
+}
+
+#checkbox_btn {
+    margin-left: 40px;
+    padding: 10px 20px;
+
+    label {
+        color: #B6BBC3;
+        font-size: 14px;
+    }
+
+    input {
+        position: relative;
+        top: 2px;
+    }
+
+    button {
+        margin-left: 30px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        outline: none;
+        font-size: 12px;
+        padding: 2px 20px;
+        background: transparent;
+        color: #fff;
+    }
+
+    .addAccount {
+        float: right;
+        background: #1B70EE;
+        border: none;
+        padding: 2px 20px;
+    }
+}
+
+.operation {
+    background: transparent;
+    border: 1px solid #B6BBC3;
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.form_info {
+    text-align: center;
+
+    h3 {
+        font-size: 18px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    >div {
+        display: flex;
+        margin-bottom: 25px;
+        justify-content: center;
+        align-items: center;
+        input.text,
+        select {
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+        }
+
+        span {
+            width: 100px;
+            text-align: left;
+            color: #707070;
+            font-size: 14px;
+        }
+        a{
+            text-align: left;
+            width: 50%;
+            color:#222222;
+            font-size: 14px;
+        }
+    }
+}
+
+.status_radio {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.icheck-primary {
+    margin-right: 100px;
+}
+
+.sub_btn button {
+    background: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    width: 220px;
+    height: 40px;
+    color: #707070;
+    font-size: 16px;
+}

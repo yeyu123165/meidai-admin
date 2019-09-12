@@ -1,0 +1,195 @@
+@md_color: #1b70ee;
+
+body {
+    background: #5A687D;
+}
+
+// .content {
+//     float: left;
+//     width: 82%;
+// }
+
+.message {
+    margin-left: 40px;
+    background : #5A687D;
+}
+
+.btn_info {
+    padding      : 5px 22px;
+    border       : 1px solid #7F8894;
+    border-radius: 4px;
+    color        : #FFFFFF;
+    font-size    : 14px;
+    font-weight  : 400;
+}
+
+.btn_info:hover {
+    background  : @md_color;
+    border-color: @md_color;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    min-width: 100px;
+}
+
+#table_id_example tr td,
+#table_id_contact tr td {
+    padding: 15px 10px;
+}
+
+.date_filtrate {
+    margin: 40px 0 40px 40px;
+
+    >button {
+        background   : transparent;
+        border-radius: 50px;
+        padding      : 4px 30px;
+        margin-right : 40px;
+        outline      : none;
+    }
+
+    .active {
+        background  : @md_color;
+        border-color: @md_color;
+    }
+}
+
+.timezone {
+    margin-left    : 40px;
+    margin-bottom  : 10px;
+    color          : #B6BBC3;
+    margin-top     : 40px;
+    display        : flex;
+    justify-content: space-between;
+    padding-right  : 40px;
+
+    select {
+        height       : 30px;
+        background   : transparent;
+        border-color : #7F8894;
+        width        : 200px;
+        border-radius: 4px;
+        padding      : 2px 5px;
+    }
+
+}
+
+#determine_the_time {
+    width      : 60px;
+    height     : 30px;
+    background : @md_color;
+    font-size  : 16px;
+    padding    : 0;
+    border     : none;
+    margin-left: 16px;
+}
+
+.add_color {
+    width        : 110px;
+    height       : 30px;
+    background   : @md_color;
+    border-radius: 4px;
+    border       : none;
+    font-size    : 14px;
+    color        : #fff;
+}
+
+.change {
+    height       : 24px;
+    width        : 80px;
+    color        : #fff;
+    background   : transparent;
+    font-size    : 14px;
+    border-radius: 4px;
+    border       : 1px solid #e0e0e0;
+    line-height  : 24px;
+}
+
+//弹框样式
+.shade {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index   : 199;
+    display   : none;
+}
+
+.modal_content {
+    background   : #fff;
+    position     : absolute;
+    top          : 50%;
+    left         : 50%;
+    transform    : translate(-50%, -50%);
+    width        : 750px;
+    padding      : 37px 140px;
+    border-radius: 4px;
+
+    h4 {
+        text-align   : center;
+        font-size    : 20px;
+        font-weight  : 400;
+        margin-bottom: 35px;
+    }
+}
+
+.params_list {
+    li {
+        display      : flex;
+        margin-bottom: 24px;
+        align-items  : center;
+
+        span {
+            width    : 100px;
+            font-size: 14px;
+            color    : #707070;
+        }
+
+        input,
+        select {
+            width        : 80%;
+            height       : 40px;
+            border       : 1px solid #d1d1d1;
+            border-radius: 4px;
+            padding      : 5px 10px;
+            ;
+            color  : #222;
+            outline: none;
+        }
+    }
+}
+
+.status_radio {
+    margin-right: 100px;
+}
+
+.submit_btn {
+    text-align: center;
+
+    button {
+        width        : 220px;
+        height       : 40px;
+        background   : transparent;
+        border-radius: 4px;
+        border       : 1px solid #d1d1d1;
+        color        : #707070;
+        font-size    : 16px;
+        outline      : none;
+    }
+}
+
+.close_icon {
+    position: absolute;
+    right   : 21px;
+    top     : 21px;
+    cursor  : pointer;
+}
+
+.color_lump {
+    width  : 50px;
+    height : 50px;
+    display: inline-block;
+}

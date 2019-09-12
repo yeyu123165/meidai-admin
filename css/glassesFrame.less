@@ -1,0 +1,468 @@
+body {
+    background: #5A687D;
+}
+
+// .content {
+//     float: left;
+//     width: 82%;
+// }
+
+.message {
+    margin-left: 40px;
+    background: #5A687D;
+}
+
+.btn_info {
+    padding: 5px 22px;
+    border: 1px solid #7F8894;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn_info:hover {
+    background: #1B70EE;
+    border-color: #1B70EE;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    min-width: 60px;
+}
+
+#table_id_example tr td,
+#table_id_contact tr td {
+    padding: 15px 10px;
+}
+
+#table_id_example {
+    img {
+        width: 125px;
+    }
+}
+
+.nav-tabs {
+    text-align: center;
+    margin: 40px 0 0 40px;
+    font-size: 18 px;
+
+    li.active a {
+        background: transparent;
+        color: #fff;
+        border-bottom-color: #5A687D;
+    }
+
+    li.active>a:hover {
+        background: transparent;
+        color: #fff;
+        border-bottom-color: #5A687D;
+    }
+
+    >li a {
+        padding: 5px 30px;
+    }
+}
+
+#nav {
+    padding: 0;
+}
+
+.nav-tabs a {
+    cursor: pointer;
+}
+
+.date_filtrate {
+    margin: 40px 0 40px 40px;
+
+    >button {
+        background: transparent;
+        border-radius: 50px;
+        padding: 4px 30px;
+        margin-right: 40px;
+        outline: none;
+    }
+
+    .active {
+        background: #1B70EE;
+        border-color: #1B70EE;
+    }
+}
+
+.timezone {
+    margin-top: 40px;
+    color: #B6BBC3;
+
+    select {
+        height: 30px;
+        color: #B6BBC3;
+        background: transparent;
+        border-color: #7F8894;
+        width: 200px;
+        border-radius: 4px;
+
+    }
+
+    // span {
+    //     position: relative;
+    // }
+
+    // span::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 12px;
+    //     width: 18px;
+    //     height: 16px;
+    //     background: url('../images/icon/date.svg') no-repeat;
+    // }
+}
+
+#determine_the_time,
+#leg_screen {
+    margin-left: 16px;
+    background: #1B70EE;
+    // height: 30px;
+    padding: 2px 0;
+    border: none;
+    width: 110px;
+    font-size: 16px;
+    outline: none;
+    // line-height: 0px;
+}
+
+.checkbox_btn {
+    padding: 10px 20px;
+    overflow: hidden;
+    label {
+        color: #B6BBC3;
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    input {
+        position: relative;
+        top: 2px;
+    }
+
+    button {
+        background: #1B70EE;
+        margin-left: 30px;
+        border: none;
+        outline: none;
+    }
+}
+
+.adjust,
+.download {
+    background: transparent;
+    border: 1px solid #7f8894;
+    // width: 100px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.adjust:hover {
+    background: #1B70EE;
+    color: #fff;
+    border-color: transparent;
+}
+
+#leg_table {
+    padding-top: 50px;
+    display: none;
+}
+
+#frame_table {
+    margin-top: 50px;
+}
+
+.shade_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.edit_content {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 35px 140px 14px 140px;
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0 0 45px 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+        position: relative;
+
+        span {
+            width: 110px;
+            color: #707070;
+            font-size: 14px;
+        }
+
+        a {
+            color: #222;
+            font-size: 14px;
+        }
+
+        input {
+            width: 70%;
+            background: transparent;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        button {
+            width: 220px;
+            height: 40px;
+            color: #707070;
+            font-size: 16px;
+            background: transparent;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+            outline: none;
+        }
+    }
+
+    .radio {
+        margin-right: 70px;
+    }
+}
+
+#edit_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.edit {
+    background: transparent;
+    border: 1px solid #d1d1d1;
+    padding: 2px 20px;
+}
+
+.unit {
+    position: absolute;
+    right: 25px;
+    top: 8px;
+}
+
+#select_frame_btn,
+#select_leg_btn {
+    float: right;
+    margin-right: 50px;
+}
+
+// 镜框选择弹框
+#select_leg_modal {
+    // display: block;
+}
+
+.select_frame_content,
+.select_leg_content {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px 45px;
+    border-radius: 4px;
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    >p {
+        text-align: right;
+        margin: 16px 0;
+        color: #707070;
+
+        a {
+            float: right;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #d1d1d1;
+            transform: translate(0, 2px);
+            margin-left: 4px;
+        }
+
+        img {
+            transform: translateY(-2px);
+        }
+    }
+
+}
+
+#select_frame_close,
+#select_leg_close,
+#multi_edit_close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.table_thead {
+    border-radius: 4px 4px 0 0;
+    background: #89B3F2;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding: 12px 0;
+
+    span {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width: 23%;
+    }
+
+    a {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width: 10.3%;
+    }
+}
+
+.table_box {
+    max-height: 450px;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.select_list {
+    width: 100%;
+    border-left: 1px solid #d1d1d1;
+    border-radius: 0 0 4px 4px;
+    max-height: 450px;
+    overflow: auto;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+
+        span {
+            line-height: 45px;
+            width: 23%;
+            text-align: center;
+            color: #707070;
+            border-right: 1px solid #d1d1d1;
+            border-bottom: 1px solid #d1d1d1;
+        }
+
+        a {
+            color: #707070;
+            line-height: 45px;
+            width: 10.3%;
+            text-align: center;
+            border-right: 1px solid #d1d1d1;
+            border-bottom: 1px solid #d1d1d1;
+        }
+    }
+}
+
+.submin_btn,
+.leg_submin_btn {
+    text-align: center;
+
+    button {
+        width: 220px;
+        height: 40px;
+        border-radius: 4px;
+        background: transparent;
+        border: 1px solid #d1d1d1;
+        color: #707070;
+        font-size: 16px;
+    }
+}
+
+.checked_item {
+    img {
+        display: none;
+    }
+}
+
+.select_frame_all_btn,
+.select_leg_all_btn {
+    img {
+        display: none;
+    }
+
+}
+
+.thumbnail_glass {
+    img {
+        width: 60px;
+    }
+}
+
+
+.select_list::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.select_list::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #999;
+}
+
+.select_list::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+.successAlert,
+.failAlert {
+    display: none;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 420px;
+    border-radius: 4px;
+    padding: 25px 80px;
+    z-index: 99999;
+
+    >p {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 25px;
+        margin-right: 5px;
+    }
+}

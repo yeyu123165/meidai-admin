@@ -1,0 +1,467 @@
+body {
+  background: #5A687D;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#success_box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+#success_box > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #B6BBC3;
+  width: 300px;
+  height: 150px;
+  border-radius: 4px;
+  text-align: center;
+}
+#success_box > div p {
+  margin: 25px 0;
+}
+#success_box > div span {
+  display: inline-block;
+}
+#success_box > div button {
+  margin-top: 20px;
+  background: #1B70EE;
+  border: 0;
+  border-radius: 4px;
+  padding: 3px 8px;
+  color: #fff;
+}
+#shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+#shade > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#shade img {
+  width: 100px;
+}
+header {
+  background: #3A4451;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+header img {
+  padding: 10px 0;
+}
+.order_info {
+  font-size: 14px;
+  line-height: 40px;
+}
+.order_info span {
+  margin-left: 24px;
+  color: #FFFFFF;
+}
+.content {
+  display: flex;
+  padding: 0 5% 50px 5%;
+}
+.content_left {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 0 0;
+}
+.top_params {
+  width: 75%;
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+.top_params p {
+  margin-left: 3%;
+  color: #fff;
+}
+.top_params p span {
+  margin-left: 15px;
+}
+#updateModel {
+  position: absolute;
+  top: 0;
+  left: -130px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #B6BBC3;
+  background: transparent;
+  border-radius: 4px;
+}
+.canvas_box {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-left: 100px;
+  top: -100px;
+}
+#canvasDisp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+#canvasMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+.content_right {
+  width: 310px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 99;
+}
+#steering {
+  width: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 130px;
+  position: relative;
+  z-index: 10;
+}
+#steering li {
+  width: 40px;
+  margin: 4px;
+  height: 26px;
+  line-height: 26px;
+}
+#steering li.steering_btn {
+  background: #8992A1;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+#top_params .slider-selection {
+  background: #B6BBC3;
+}
+#top_params .slider-handle {
+  background: #fff;
+  background-image: none;
+  border: 2px solid #B6BBC3;
+  width: 15px;
+  height: 15px;
+  top: -2px;
+}
+#top_params .slider.slider-horizontal .slider-track {
+  height: 2px;
+  background: #B6BBC3;
+}
+#top_params {
+  border: 1px solid #B6BBC3;
+  border-radius: 4px;
+  padding: 0 16px;
+  position: relative;
+}
+#top_params > ul > li {
+  border-bottom: 1px solid #B6BBC3;
+}
+#top_params > ul > li h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 16px 0;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+}
+#top_params > ul > li a {
+  transition: 0.5s;
+}
+.overflow_val {
+  position: relative;
+  z-index: -1;
+  opacity: .5;
+}
+.submit_btn {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.submit_btn button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #B6BBC3;
+  background: #B6BBC3;
+  color: #3A4451;
+}
+#update_done {
+  background: transparent;
+  color: #fff;
+}
+#appearance {
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+#appearance > p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+#appearance > p span {
+  color: #B6BBC3;
+  margin-left: 60px;
+}
+#appearance select {
+  margin-left: 60px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #B6BBC3;
+  border-radius: 4px;
+  color: #B6BBC3;
+}
+.frame_color_list,
+.leg_color_list {
+  background: #B6BBC3;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+.frame_color_list p,
+.leg_color_list p {
+  color: #222;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.frame_color_list p span,
+.leg_color_list p span {
+  margin-left: 48px;
+}
+.frame_color_list ul,
+.leg_color_list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.frame_color_list ul li,
+.leg_color_list ul li {
+  width: 10%;
+  height: 26px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.frame_color_list .active::after,
+.leg_color_list .active::after {
+  content: '';
+  width: 7px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  transform: rotate(45deg);
+}
+.frame_color_list .active::before,
+.leg_color_list .active::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  transform: rotate(135deg);
+}
+.save_params {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.save_params button {
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #B6BBC3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+#glasses_params,
+#calibration_params,
+#bevel_params,
+#carve_params,
+#rowscan_params {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 0;
+}
+.EnforceLensRotX {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 220px;
+  width: 100%;
+}
+.EnforceLensRotX span {
+  color: #fff;
+}
+.selsect_params {
+  position: absolute;
+  z-index: 10;
+  top: 420px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.selsect_params p {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 48%;
+  align-items: center;
+}
+.selsect_params p select {
+  width: 65px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #B6BBC3;
+  border-radius: 4px;
+  color: #B6BBC3;
+}
+.slide_params li {
+  margin-bottom: 10px;
+}
+.slide_params li p {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.slide_params li p > span {
+  position: absolute;
+  left: 0;
+}
+.slide_params li p a {
+  color: #fff;
+}
+.slide_params li > div {
+  display: flex;
+  justify-content: space-between;
+}
+.slide_params li > div span {
+  color: #B6BBC3;
+  font-size: 14px;
+  transform: translateY(-5px);
+}
+.slide_params .LensRotX_item {
+  margin-bottom: 45px;
+}
+.slide_params .NosePadPosition_item {
+  margin-top: 90px;
+}
+.glasses_params_save_btn {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.glasses_params_save_btn button {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #B6BBC3;
+  background: transparent;
+  border-radius: 4px;
+}
+.carve_comment {
+  color: #fff;
+  margin-bottom: 12px;
+}
+#bevel_params .bevel_tri {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.carve_bridge,
+.highlight,
+.carve {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+#carve_value {
+  border: none;
+  border-bottom: 1px solid #B6BBC3;
+  padding: 5px 0;
+  background: transparent;
+  width: 180px;
+  outline: none;
+}
+#rowscan_params ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#rowscan_params ul li {
+  width: 50%;
+  margin-bottom: 10px;
+}
+#rowscan_params ul li span {
+  color: #B6BBC3;
+}
+#rowscan_params ul li a {
+  color: #B6BBC3;
+  text-decoration: none;
+}
+#warning_box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 50px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 8px;
+}

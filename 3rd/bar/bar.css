@@ -1,0 +1,143 @@
+.progress-box {
+    width: 300px;
+    padding: 15px;
+}
+
+.progress-box .progress-bar-box {
+    height: 8px;
+    overflow: inherit;
+    border-radius: 5px;
+    background: #dddee0;
+    width: 250px;
+    margin-left: 0px;
+}
+
+.progress-box .progress-bar-box .bar-scroll {}
+
+.progress-box .progress-bar-box .bar-scroll-box {
+    background-color: #009ddd;
+    position: relative;
+    border-radius: 5px;
+    width: 20%;
+    height: 8px;
+}
+
+.progress-box .progress-bar-box .bar-scroll-box .bar-mark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0px 1px 10px #dadada;
+}
+
+.progress-box .progress-bar-box .bar-scroll-box .bar-info {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    visibility: visible;
+    filter: alpha(opacity=0);
+    padding: 5px 5px;
+    margin-top: -3px;
+    color: #fff;
+    right: -39px;
+    top: -37px;
+    min-width: 75px;
+}
+
+.progress-box .progress-bar-box .bar-scroll-box .bar-info .info-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #009ddd;
+}
+
+.progress-box .progress-bar-box .bar-scroll-box .bar-info .info-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #009ddd;
+}
+
+.content-box .intro-box .intro-form-box .form-horizontal .sex-box {
+    margin-bottom: 10px;
+}
+
+.sex-box .progress {
+    height: 8px;
+    overflow: inherit;
+    border-radius: 5px;
+    background: #dddee0;
+    width: 465px;
+    margin-left: 0px;
+}
+
+.sex-box .progress-bar {
+    position: relative;
+    border-radius: 5px;
+}
+
+.sex-box .progress-bar-info {
+    background-color: #009ddd;
+}
+
+.sex-box .progress-bar-danger {
+    background-color: #ff5f71;
+}
+
+.sex-box .progress-flag {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0px 1px 10px #dadada;
+}
+
+.sex-box .boy-box .tooltip.top {
+    color: #fff;
+    right: -32px;
+    top: -37px;
+}
+
+.sex-box .boy-box .tooltip.top .tooltip-arrow {
+    border-top-color: #009ddd;
+}
+
+.sex-box .boy-box .tooltip.top .tooltip-inner {
+    background: #009ddd;
+}
+
+.sex-box .girl-box .tooltip.top {
+    color: #fff;
+    right: -32px;
+    top: -37px;
+}
+
+.sex-box .girl-box .tooltip.top .tooltip-arrow {
+    border-top-color: #ff5f71;
+}
+
+.sex-box .girl-box .tooltip.top .tooltip-inner {
+    background: #ff5f71;
+
+}
